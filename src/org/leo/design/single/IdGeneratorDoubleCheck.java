@@ -23,7 +23,8 @@ public class IdGeneratorDoubleCheck {
     //开放公共获取单例对象的接口
     public static IdGeneratorDoubleCheck getInstance(){
         if (instance == null ){
-            synchronized (IdGeneratorDoubleCheck.class){//此处为类级别的锁
+            //此处为类级别的锁
+            synchronized (IdGeneratorDoubleCheck.class){
                 if (instance == null){
                     instance = new IdGeneratorDoubleCheck();
                 }
