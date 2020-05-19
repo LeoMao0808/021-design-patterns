@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * 模块名称: CRM
- * 模块描述: TODO
+ * 模块描述: 简单工厂
  *
  * @author xiaochuang.mao
  * @date 2020/5/18 13:13
