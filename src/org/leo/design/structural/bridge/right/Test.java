@@ -3,6 +3,8 @@ package org.leo.design.structural.bridge.right;
 import org.leo.design.structural.bridge.right.channel.WeChatMsgSender;
 import org.leo.design.structural.bridge.right.level.SevereNotification;
 
+import java.util.Arrays;
+
 /**
  * 模块名称: CRM
  * 模块描述: 测试
@@ -17,7 +19,7 @@ import org.leo.design.structural.bridge.right.level.SevereNotification;
  */
 public class Test {
     public static void main(String[] args) {
-        SevereNotification severeNotification = new SevereNotification(new WeChatMsgSender());
+        SevereNotification severeNotification = new SevereNotification(new WeChatMsgSender(Arrays.asList("123","456")));
         severeNotification.notify("严重警告");
     }
 }
